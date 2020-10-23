@@ -521,6 +521,8 @@
                         editor of the <a href="https://www.w3.org/TR/rdb2rdf-implementations/">R2RML Implementation Report</a>a>.
                         We were very excited about the discussions this panel could trigger but it <b>exceeded our expectations</b>!
                     </p>
+                </div>
+                <div class="about-content" style="font-size: 14pt">
                     <p>
                         With this panel, we wanted to <b>bridge the gap between the two generations</b>,
                         i.e. the generation that worked on constructing KGs from databases and
@@ -533,6 +535,8 @@
                         In the case of Machine Learning (ML), the community spirit prevailed and this is reflected on the results.
                         <i>Good news: we are in the right direction</i>!
                     </p>
+                </div>
+                <div class="about-content" style="font-size: 14pt">
 
                     <p>
                         The <b>motivations and expectations were very well-defined when the RDB2RDF Working Group was formed</b>,
@@ -584,6 +588,8 @@
                         Souri suggested looking at generating RDF (materialized) views on top of natural language.
                         He also provided some well-documented suggestions in a slideck that is available at +++ADD SLIDES LINK+++.
                     </p>
+                </div>
+                <div class="about-content" style="font-size: 14pt">
                     <p>
                         The panelists also agreed that defining rules is not a technical issue but social.
                         Different views may come up out of the same data depending on the user and the desired use.
@@ -592,6 +598,58 @@
                         e.g., providing examples of how things should be done and corresponding solutions
                         is one of the things they regret they did not do after R2RML became a recommendation.
                         <i>advice for our CG: emphasis on providing material</i>
+                    </p>
+                </div>
+                <div class="about-content" style="font-size: 14pt">
+                    <h3>mapping languages</h3>
+                    <p>
+                        Besides R2RML, mapping languages for constructing KGs from heterogeneous data were discussed in a dedicated session.
+                        There was a good variety of alternatives presented, representing the dominant trends.
+                        In all cases, the mapping languages rely on an existing specification for other purposes and
+                        reuse existing grammars to refer to the input data:
+                        <a href="https://rml.io/specs/rml/">RML</a> and
+                        <a href="http://i3s.unice.fr/~fmichel/xr2rml_specification.html">xR2RML</a>
+                        based on the R2RML W3C recommendation,
+                        <a href="https://ci.mines-stetienne.fr/sparql-generate/">SPARQL-Generate</a>
+                        based on the <a href="https://www.w3.org/TR/sparql11-query/">SPARQL</a> W3C recommendation and
+                        ShExML based on <a href="https://shex.io/">ShEx</a> specification.
+                        The Ontop mapping language was also presented and
+                        <a href="https://rml.io/yarrrml/spec/">YARRRML</a> as a human-friendly representation of [R2]RML.
+                    </p>
+                </div>
+                <div class="about-content" style="font-size: 14pt">
+                    <p>
+                        While there are quite some similarities,
+                        there are also differences between the mapping languages proposed so far.
+                        RML was proposed with minimum changes over R2RML in mind to prove that it is possible to construct KGs with the same mapping language.
+                        xR2RML follows the RML principles but dives in more details on limitations that RML inherited from R2RML,
+                        e.g., accessing outer fields while iterating over hierarchical data or supporting RDF lists/containers.
+                        SPARQL-Generate follows the same principles but targets an audience more familiar with SPARQL.
+                        Last ShExML tries to bring the generation and validation one step closer in a different way than it was by combining RML and RDFUnit.
+                        Franck Michel suggested looking towards a generic model for a mapping model from a scientific point of view
+                        with concrete guidelines on how we can achieve this from a pragmatic point of view.
+                        It was concluded that we not only need to investigate the differences
+                        but also to <b>build alignments between languages and corresponding implementations</b>
+                        to easily switch from one language to another.
+                    </p>
+                </div>
+                <div class="about-content" style="font-size: 14pt">
+                    <p>
+                        Of course behind the success stories of mapping languages,
+                        there are still challenges to be addressed,
+                        as they were brought up in the past by
+                        <a href="https://www.linkedin.com/in/valexiev">Valdimir Alexiev</a>,
+                        <a href="https://nl.linkedin.com/in/panomaria">Pano Maria</a> and
+                        <a href="https://work.de-meester.org/">Ben De Meester</a>.
+                        These challenges are related to e.g.,
+                        generating language and datatype tags based on data,
+                        data transformations, multi-valued subject maps,
+                        joins especially for hierarchical data and when to process them
+                        (even though the latter is an implementation aspect),
+                        data streams as input, etc.
+                        <a href="https://github.com/kg-construct/mapping-challenges">https://github.com/kg-construct/mapping-challenges</a>
+                        summarizes all challenges
+                        and <b>we hope we see soon more challenges listed and lots of updates on mapping languages</b>!
                     </p>
                 </div>
 
